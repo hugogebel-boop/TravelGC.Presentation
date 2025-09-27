@@ -4,6 +4,7 @@ import {
     Train, Map, Bath, Users, CheckCircle2,
     ChevronLeft, ChevronRight, PartyPopper, Sparkles
 } from "lucide-react";
+import logo from "./assets/logo.webp"; // ou .png / .webp
 
 // ------- helpers UI -------
 const cx = (...c: Array<string | false | null | undefined>) => c.filter(Boolean).join(" ");
@@ -103,7 +104,7 @@ export function TravelGCDeck() {
                     </motion.ul>
                 </div>
             ),
-            accent: <ColorBlock caption="Logo TRAVEL GC" />,
+            accent: <img src={logo} alt="Logo Travel GC" className="w-full h-full object-cover rounded" />,
         },
         {
             key: "why",
