@@ -1,13 +1,20 @@
 <!doctype html>
 <html lang="fr">
-  <head>
+<head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>TRAVEL GC — Présentation</title>
     <meta name="description" content="Présentation TRAVEL GC — voyage étudiant organisé." />
-  </head>
-  <body class="min-h-screen bg-stone-50">
+    <meta name="theme-color" content="#0f766e" />
+    <!-- IMPORTANT pour GH Pages (chemins relatifs au repo) -->
+    <link rel="icon" href="%VITE_BASE_URL%favicon.svg" />
+    <!-- Si tu as d'autres assets (manifest, icônes), utilise aussi %VITE_BASE_URL% -->
+    <!-- <link rel="manifest" href="%VITE_BASE_URL%site.webmanifest"> -->
+</head>
+<body class="min-h-screen bg-stone-50">
     <div id="root"></div>
+    <!-- Point d’entrée Vite (ok en dev, réécrit en prod) -->
     <script type="module" src="./src/main.tsx"></script>
-  </body>
+    <noscript>Active JavaScript pour voir cette présentation.</noscript>
+</body>
 </html>

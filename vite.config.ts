@@ -2,6 +2,6 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  plugins: [react()],
-  base: '/TravelGC.Presentation/',
+    plugins: [react()],
+    base: '/TravelGC.Presentation/', // ok pour GH Pages "repo"
 })
